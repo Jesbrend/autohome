@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Carrinho Compra em JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrinho.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+   
+    <div class="models">
+        <div class="models-item">
+            <a href="">
+                <div class="models-item--img"><img src="" /></div>
+                <div class="models-item--add">+</div>
+            </a>
+            <div class="models-item--price">R$ --</div>
+            <div class="models-item--name">--</div>
+            <div class="models-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+    
+    <main>
+        <div class="models-area"></div>
+        <header class="header">
+            <div class="menu-openner">
+                <span>0</span>
+                <span class="material-icons">shopping_cart</span>
+            </div>
+            <section class="flex">
+    
+                <a href="#" class="logo">
+                    <img src="images/Logo.png" alt="">
+                </a>
+            
+                <nav class="navbar">
+                    <a href="index.html">home</a>
+                    <a href="index.html">Sobre Nós</a>
+                    <a href="carrinho.html">produtos</a>
+                    <a href="index.html">avaliações</a>
+                    <a href="index.html">contato</a>
+                    <a href="index.html">blogs</a>
+                </nav>
+            
+                <div class="icons">
+                    <a href="carrinho.html"><button class="btn"><i class="fa fa-shopping-cart"></i></button></a>
+                    <a href="login.html"><button class="btn"><i class="fa fa-user"></i></button></a>
+                    <div class="fas fa-bars" id="menu-btn"></div>            
+                </div>
+        
+            </section>
+            
+        </header>
+        
+        
+        <section class="footer" >
+        
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/brendongfe/" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        
+            <div class="links">
+                <a href="#">home</a>
+                <a href="#">sobre nós</a>
+                <a href="#">produtos</a>
+                <a href="#">avaliações</a>
+                <a href="#">contato</a>
+                <a href="#">blogs</a>
+            </div>
+        
+            <div class="credit">criado por <span>Jessé Brendon e Brendda Gaudêncio e Gabriel Nóbrega</span> | todos os direitos reservados</div>
+        
+        </section>
+    </main>
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">
+                <span class="material-icons">close</span>
+            </div>
+            <h1>Carrinho</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar"><a href="pagamento.html">Finalizar a compra </a></div>
+            </div>
+        </div>
+    </aside>
+    <div class="modelsWindowArea">
+        <div class="modelsWindowBody">
+           
+            <div class="modelsInfo--cancelMobileButton">Voltar</div>
+            <div class="modelsBig">
+                <img src="" />
+            </div>
+            <div class="modelsInfo">
+                <h1>--</h1>
+                <div class="modelsInfo--desc">--</div>
+                <div class="modelsInfo--sizearea">
+                    <div class="modelsInfo--sector">Voltagem</div>
+                    <div class="modelsInfo--sizes">
+                        <div data-key="0" class="modelsInfo--size selected"> <span>--</span></div>
+                       
+                    </div>
+                </div>
+                <div class="modelsInfo--pricearea">
+                    <div class="modelsInfo--sector">Preço</div>
+                    <div class="modelsInfo--price">
+                        <div class="modelsInfo--actualPrice">R$ --</div>
+                        <div class="modelsInfo--qtarea">
+                            <button class="modelsInfo--qtmenos">-</button>
+                            <div class="modelsInfo--qt">1</div>
+                            <button class="modelsInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                <div class="modelsInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="js/models.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

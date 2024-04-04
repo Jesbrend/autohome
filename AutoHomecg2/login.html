@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="area-login">
+        <div class="login">
+            <div><img src="images/Logo.png" alt="">
+            
+            </div>
+
+            
+        <input type="text" placeholder="Usuario" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" value="Logar" onclick="logar(); return false">
+
+             </form>
+            <p> Ainda não tem uma conta?<a href="casdastro.html">Criar conta</a></p>
+        </div>
+    </section>
+    <script>
+         function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso');
+                location.href = "tela de admin.html";
+            }else if(login == "cliente" && senha == "cliente"){
+                alert('Sucesso');
+                location.href = "perfil.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
